@@ -62,6 +62,7 @@ namespace SQLiteWeb
             });
 
             DummyData.Initialize(context);
+            context.Database.Migrate();
         }
     }
 }
