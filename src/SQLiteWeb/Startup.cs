@@ -61,8 +61,9 @@ namespace SQLiteWeb
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            DummyData.Initialize(context);
+
             context.Database.Migrate();
+            DummyData.Initialize(context);
         }
     }
 }
